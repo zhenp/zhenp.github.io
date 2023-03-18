@@ -28,6 +28,10 @@
 <script src="/lib/qrcode.min.js"></script>
 
 
+    
+<script src="https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js"></script>
+
+
 
 
 <div class="site-config">
@@ -141,7 +145,7 @@
             
             <a id="site-name" href="/" title="返回博客主页">
                 <span class="heoicon">
-                    ZHENP BLOG
+                    ZHENP
                 </span>
             </a>
         </div>
@@ -342,6 +346,25 @@
         
     
 </nav>
+    
+        <div id="post-comment">
+    <div class="comment-head">
+        <div class="comment-headline"><i class="fas fa-message fa-fw"></i><span> 评论</span></div>
+        <!-- <div class="comment-privacy"><a href="/privacy/" data-pjax-state="">隐私政策</a></div> -->
+        <!-- <div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div> -->
+    </div>
+    <div class="comment-wrap">
+        <div id="tcomment"></div>
+        <script>
+            function initComment(){
+               twikoo.init({
+                envId: '',
+                el: '#tcomment',
+             }) 
+            }
+        </script>
+    </div>
+</div>
         
 </div>
     <div class="aside-content" id="aside-content">
@@ -353,22 +376,22 @@
             <div class="author-info__name">
                 zhenp
             </div>
-            <div class="author-info__description">这有关于<b>开发</b>、<b>技术</b>相关的问题和看法，还有对于动漫的一些<b>杂评</b>。<br>相信你可以在这里找到对你有用的知识和教程。</div>
+            <div class="author-info__description">这有关于<b>临床</b>、<b>科研</b>相关的问题和看法，还有对于生活的一些<b>感悟</b>。<br>相信你可以在这里找到对你有用的知识和教程。</div>
         </div>
     </div>
     <div class="banner-button-group">
-        <a class="banner-button" href="/">
+        <a class="banner-button" target="_blank" rel="noopener" href="https://zhenp.github.io">
             <i class="fas fa-circle-chevron-right"></i>
             <span class="banner-button-text">个人主页</span>
         </a>
     </div>
     <div class="card-info-social-icons is-center">
         
-            <a class="social-icon" target="_blank" rel="noopener" href="https://github.com/rootlexblog" title="Github">
+            <a class="social-icon" target="_blank" rel="noopener" href="https://zhenp.github.io" title="Github">
                 <i class="fa-brands fa-github"></i>
             </a>
         
-            <a class="social-icon" href="mailto:a@nalex.top" title="Mail">
+            <a class="social-icon" href="/zhenpengxue@outlook.com" title="Mail">
                 <i class="fa-solid fa-envelope"></i>
             </a>
         
@@ -505,7 +528,7 @@
     <div class="footer-banner-links">
         <div class="footer-banner-left">
             <div id="footer-banner-tips">
-                <div class="copyright">©2021 - 2023 By 
+                <div class="copyright">©2023 - 2023 By 
                     <a class="footer-banner-link" href="/" rel="external nofollow">zhenp</a>
                 </div>
             </div>
